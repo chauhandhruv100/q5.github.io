@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+<p id="id"></p>
+<h1>Click the Generate button 10 times</h1>
+<button class="button" type="button" onclick="playerfinder();">Generate random player's role</button>
+<script>
+// function rolefinder()
+// {
+//     var x = return playerfinder();
+// }
+var count1=0,count2=0,count3=0,count4=0,count5=0;
+ function playerfinder()
+ {
+    var players = ["Player 1", "Player 2", "Player 3", "Player 4", "Player 5"];
+    var roles = ["Role 1", "Role 2", "Role 3", "Role 4", "Role 5"];
+    var i;
+    for(i=0;i<10;i++)
+    {
+        var x= Math.floor(Math.random() * 5) + 1;
+    if (x==1)
+    {
+        document.getElementById("id").innerHTML = players[0].toString()+ " : " + roles[0].toString();
+        count1++;
+    }
+    if (x==2)
+    {
+        document.getElementById("id").innerHTML = players[1].toString()+ " : "+ roles[1].toString();
+        count2++;
+    }
+    if (x==3)
+    {
+        document.getElementById("id").innerHTML = players[2].toString() + " : "+ roles[2].toString();
+        count3++;
+    }
+    if (x==4)
+    {
+        document.getElementById("id").innerHTML = players[3].toString()+ " : "+ roles[3].toString();
+        count4++;
+    }
+    if (x==5)
+    {
+        document.getElementById("id").innerHTML = players[4].toString()+ " : "+ roles[4].toString();
+        count5++;
+    }
+    }
+ }
+</script>
+
+</body>
+</html>
